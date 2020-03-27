@@ -142,6 +142,7 @@ class App extends Component {
 				    	 <ImageLinkForm 
 				    	 	inputChange = {this.onInputChange} 
 				    	 	submit = {this.onSubmit}
+				    	 	
 				    	/>
 				    	<FaceRecognition box={this.state.box} imageURL = {this.state.imageURL}/>
 			    	</div>
@@ -153,7 +154,6 @@ class App extends Component {
 			    }
 			    
 		    </div>
-		    <p style={{position:'absolute', bottom:'0', width:'100%'}} className='gray center'>Made by Sanskar</p>
 		</div>
 	  );
 	}

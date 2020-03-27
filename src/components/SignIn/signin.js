@@ -81,6 +81,7 @@ class SignIn extends React.Component{
 					  </div>
 					</main>
 				</article>
+				<p style={{position:'absolute', bottom:'0', width:'100%'}} className='gray center'>Made by Sanskar</p>
 			</div>
 		);
 	}
