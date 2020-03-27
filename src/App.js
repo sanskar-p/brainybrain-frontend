@@ -153,7 +153,7 @@ class App extends Component {
 			    }
 			    
 		    </div>
-		    <p style={{bottom:'10px'}} className='gray'>Made by Sanskar</p>
+		    <p style={{position:'absolute', bottom:'0', width:'100%'}} className='gray center'>Made by Sanskar</p>
 		</div>
 	  );
 	}
