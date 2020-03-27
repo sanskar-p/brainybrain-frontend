@@ -130,28 +130,31 @@ class App extends Component {
 
 	render(){
 	  return (
-	    <div className="App">
-	    	<Particles className='particles'
-                params = {particlesOptions} />
-	    	 <Navigation onRouteChange = {this.onRouteChange} isSignedIn={this.state.isSignedIn}/>
-	    	 { this.state.route === 'home' ?
-		    	<div>
-			    	 <Logo/>
-			    	 <Rank name={this.state.user.name} score={this.state.user.score}/>
-			    	 <ImageLinkForm 
-			    	 	inputChange = {this.onInputChange} 
-			    	 	submit = {this.onSubmit}
-			    	/>
-			    	<FaceRecognition box={this.state.box} imageURL = {this.state.imageURL}/>
-		    	</div>
-		    	:(
-		    		this.state.route === 'signin' ?
-		    		<SignIn loadUser={this.loadUser} onRouteChange = {this.onRouteChange}/>
-		    		: <Register onRouteChange = {this.onRouteChange} loadUser = {this.loadUser}/>
-		    		)
-		    }
+	  	<div>
+		    <div className="App">
+		    	<Particles className='particles'
+	                params = {particlesOptions} />
+		    	 <Navigation onRouteChange = {this.onRouteChange} isSignedIn={this.state.isSignedIn}/>
+		    	 { this.state.route === 'home' ?
+			    	<div>
+				    	 <Logo/>
+				    	 <Rank name={this.state.user.name} score={this.state.user.score}/>
+				    	 <ImageLinkForm 
+				    	 	inputChange = {this.onInputChange} 
+				    	 	submit = {this.onSubmit}
+				    	/>
+				    	<FaceRecognition box={this.state.box} imageURL = {this.state.imageURL}/>
+			    	</div>
+			    	:(
+			    		this.state.route === 'signin' ?
+			    		<SignIn loadUser={this.loadUser} onRouteChange = {this.onRouteChange}/>
+			    		: <Register onRouteChange = {this.onRouteChange} loadUser = {this.loadUser}/>
+			    		)
+			    }
+			    
+		    </div>
 		    <p style={{bottom:'10px'}} className='gray'>Made by Sanskar</p>
-	    </div>
+		</div>
 	  );
 	}
 }
