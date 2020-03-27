@@ -150,9 +150,7 @@ class App extends Component {
 		    		: <Register onRouteChange = {this.onRouteChange} loadUser = {this.loadUser}/>
 		    		)
 		    }
-	      	{/*
-	        <ImageLinkForm/>
-	        <FaceRecognition/>*/}
+		    <p style={{bottom:'10px'}} className='gray'>Made by Sanskar</p>
 	    </div>
 	  );
 	}
